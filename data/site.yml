@@ -1,0 +1,13 @@
+# Required
+language: 'es-MX'
+url: 'https://onesofttek.sharepoint.com/sites/SKCopspcs/appdev/desapp'
+human_url: 'appdev.onesofttek.sharepoint.com'
+name: 'AppDev'
+description: '(AppDev) Práctica de Desarrollo de Aplicaciones de Softtek'
+title: '(AppDev) Práctica de Desarrollo de Aplicaciones de Softtek'
+
+# Optional
+logo_image_name: 'logo.png'
+logo_image_path: 'https://onesofttek.sharepoint.com/sites/SKCopspcs/appdev/desapp/images/logo.png'
+twitter_handle: ''
+facebook_app_id: ''
