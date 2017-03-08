@@ -36,13 +36,14 @@ end
 #   end
 # end
 
-# activate :blog do |blog|
-#   blog.name = "products"
-#   blog.prefix = "products"
-#   blog.permalink = "{title}"
-#   blog.layout = "product-layout"
-#   #blog.new_article_template = "source/article-templates/product-template.erb"
-# end
+activate :blog do |blog|
+  blog.name = "process"
+  blog.prefix = "processes"
+  blog.sources = "{lang}/{title}"
+  blog.permalink = "{lang}/{title}"
+  blog.layout = "process_layout"
+  #blog.new_article_template = "source/article-templates/product-template.erb"
+end
 
 # activate :google_analytics do |ga|
 #   ga.tracking_id = 'UA-92680708-1'

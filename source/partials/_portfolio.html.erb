@@ -1,0 +1,26 @@
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Servicios que ofrecemos</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+          <% current_page.data.portfolio.each do |service| %>
+            <div class="col-sm-4 portfolio-item">
+              <% link_to service.link, :class => 'portfolio-link' do %>
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <%= image_tag service.picture, resize_to: "200x200", :class => 'img-responsive center-block', :alt => service.name %>
+              <% end %><br/>
+              <p class="text-center"><%= service.name %></p>
+            </div>
+          <% end %>
+        </div>
+    </div>
+</section>

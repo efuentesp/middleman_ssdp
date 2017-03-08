@@ -1,0 +1,12 @@
+<!-- Other Processes Section -->
+<section id="processes">
+    <div class="container">
+              <% data.process.ssdp.es.processes.other_diagrams.each do |diagram| %>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <%= image_tag diagram.picture, :alt => '' %>
+                  </div>
+                </div>
+              <% end %>
+    </div>
+</section>

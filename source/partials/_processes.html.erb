@@ -1,0 +1,28 @@
+<!-- Process Section -->
+<section id="processes" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Procesos de Desarrollo</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-offset-2">
+            <% current_page.data.processes.each do |process| %>
+              <div class="col-sm-4 portfolio-item">
+                <% link_to process.link, :class => 'portfolio-link' do %>
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <%= image_tag process.picture, resize_to: "200x200", :class => 'img-responsive center-block', :alt => process.name %>
+                <% end %><br/>
+                <p class="text-center"><%= process.name %></p>
+              </div>
+            <% end %>
+          </div>
+        </div>
+    </div>
+</section>

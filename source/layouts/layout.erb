@@ -1,7 +1,12 @@
 <%= partial 'partials/head' %>
 
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+<%= partial 'partials/navigation' %>
+
 <!-- Main Content -->
 <%= yield %>
 <!-- End Main Content -->
+
+<%= partial 'partials/footer' %>
 
 <%= partial 'partials/foot' %>

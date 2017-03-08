@@ -1,0 +1,26 @@
+<!-- Practices Section -->
+<section id="practices" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Prácticas</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+          <% current_page.data.practices.each do |practice| %>
+            <div class="col-sm-4 portfolio-item">
+              <% link_to practice.link, :class => 'portfolio-link' do %>
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <%= image_tag practice.picture, resize_to: "200x200", :class => 'img-responsive center-block', :alt => practice.name %>
+              <% end %><br/>
+              <p class="text-center"><%= practice.name %></p>
+            </div>
+          <% end %>
+        </div>
+    </div>
+</section>

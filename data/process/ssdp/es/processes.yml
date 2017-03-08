@@ -1,0 +1,96 @@
+title: Procesos de Desarrollo
+table_title_name: Nombre
+table_title_description: Descripción
+base_url: "/site/processes/ssdp/es"
+processes:
+  - code: ENG
+    title: Compromiso
+    link: "/process_eng"
+    description: "Este proceso es parte del ciclo de Ventas. Se encarga de transformar los requerimientos del cliente en una propuesta de solución que es acorde con  la información proporcionada y que es factible para  su operación respecto al modelo de compromiso  seleccionado de Desarrollo de Aplicaciones y a los elementos que cada uno de estos establece."
+  - code: REQ
+    title: Desarrollo de los Requerimientos
+    link: "/process_req"
+    description: "En este proceso se crea una line base de los artefactos que darán soporte el entendimiento de los objetivos y procesos de negocio del cliente, adquiriendo el conocimiento de negocio y desarrollando las Especificaciones de los Requerimientos Funcionales y No-Funcionales para la Aplicación (nueva o a modificar). Esto con apego y consistencia con el alcance original del proyecto definido en la Solicitud de Trabajo (SOW)."
+  - code: ARC
+    title: Diseño e Implementación de la Arquitectura
+    link: "/process_arc"
+    description: "En este proceso se tomarán las decisiones y se definirá la plataforma sobre la cual se basará la Aplicación. Como resultado de la toma de decisiones técnicas se implementará tanto el framework y los subsistemas de soporte necesarios que satisfagan los requerimientos funcionales y no-funcionales."
+  - code: SFD
+    title: Diseño Funcional de la Solución
+    link: "/process_sfd"
+    description: "Define y diseña una solución específica a los Requerimientos Funcionales y No-Funcionales aprobados del proyecto."
+  - code: DBI
+    title: Diseño e Implementación de la Base de Datos
+    link: "/process_dbi"
+    description: "Transforma el Modelo Lógico de la Base de Datos a un Modelo Físico capaz de satisfacer los requisitos de acceso a datos, volúmenes de datos esperados, desempeño, concurrencia, integridad y privacidad de los datos de requeridos por los componentes funcionales."
+  - code: CSI
+    title: Especificación de Implementación de Componentes
+    link: "/process_csi"
+    description: "Es el proceso de integrar las consideraciones técnicas dentro de las Especificación del Componente Funcional."
+  - code: GUI
+    title: Diseño de la Interfaz Gráfica de Usuario
+    link: "/process_gui"
+    description: "Transforma los Prototipos de Baja-fidelidad (layouts de interfaz) en Prototipos de Alta-Fidelidad (HTML o Formas) de acuerdo a los estándares de Interfaz de Usuario y a los Patrones Funcionales autorizados para la aplicación."
+  - code: CTR
+    title: Construcción de Componentes
+    link: "/process_ctr"
+    description: "Este proceso incluye el diseño de la estructura interna (identificando y diseñando los componentes técnicos), codificando y probando a profundidad los componentes funcionales. La construcción de los componentes será apoyada por el uso de un generador de código para esta etapa."
+  - code: INT
+    title: Integración del Sistema
+    link: "/process_int"
+    description: "Es el proceso de integración de los componentes funcionales en un sistema completo, se prueban las interacciones directas entre los componentes funcionales."
+  - code: STD
+    title: Diseño de las Pruebas de Sistema
+    link: "/process_std"
+    description: "Define la estrategia de pruebas y se desarrolla el Testware a nivel Sistema."
+  - code: STE
+    title: Ejecución de las Pruebas de Sistema
+    link: "/process_ste"
+    description: "Es el proceso de ejecución de las pruebas integrales de la aplicación, para validar la correcta ejecución “punta-a-punta” del proceso de negocio, y el cumplimiento de los requerimientos de desempeño en un ambiente de producción (o similar) bajo condiciones de estrés."
+  - code: DOC
+    title: Documentación Técnica y de Usuario
+    link: "/process_doc"
+    description: "Es el proceso de generación de la Documentación para el equipo técnico del cliente (liberación/instalación, configuración y estructura técnica interna) y para la comunidad de usuarios (manual de usuario final)."
+  - code: UAT
+    title: Soporte a las Pruebas de Aceptación
+    link: "/process_uat"
+    description: "Es el proceso de asistencia/ayuda a los stakeholders del proyecto durante sus pruebas y aprobación, incluye la corrección de cualquier defecto durante este proceso."
+  - code: PD
+    title: Entrega de Producto
+    link: "/process_pd"
+    description: ""
+  - code: SCM
+    title: Administración de la Configuración del Software
+    link: "/process_scm"
+    description: "El propósito de la Gestión de Configuración (CM) es establecer y mantener la integridad de los productos de trabajo utilizando la identificación de la configuración, el control de la configuración, el informe del estado de la configuración y las auditorías de la configuración."
+  - code: IFR
+    title: Administración de la Infraestructura y Ambiente
+    link: "/process_ifr"
+    description: ""
+  - code: DAT
+    title: Administración de los Datos de Prueba
+    link: "/process_dat"
+    description: ""
+  - code: ISP
+    title: Inicialización del Proyecto de Software
+    link: "/process_isp"
+    description: "Proceso que define los pasos necesarios para el arranque correcto del proyecto que  incluya la elaboración del plan de trabajo, descripción del alcance, manejo  de riesgos, principales actores, así como mecanismos para su control y seguimiento."
+  - code: PTO
+    title: Control y Seguimiento del Proyecto
+    link: "/process_pto"
+    description: "Proceso que permite incluir los mecanismos de control apropiados para conocer el avance y progreso del proyecto con métricas de desempeño así como la toma de decisiones basada en datos y establecer acciones correctivas sobre desviaciones para  poder asegurar la conclusión exitosa en tiempo y presupuesto."
+  - code: PCR
+    title: Solicitud de Cambios en el Proyecto
+    link: "/process_pcr"
+    description: "Proceso que administra los cambios de alcance del proyecto en función a la última Línea Base (Baseline) definida y acordada con el cliente. Evalúa el impacto de los cambios identificados y la negociación de los mismos con el cliente, los cambios autorizados son incorporados al plan de trabajo y establecen una nueva línea base para el proyecto."
+  - code: FPT
+    title: Formalizar la Terminación del Proyecto
+    link: "/process_fpt"
+    description: "Proceso que describe las acciones necesarias para la formalización y  cierre correcto del proyecto para que el aprendizaje generado sea capitalizable por futuros proyectos en términos de métricas de desempeño, lecciones aprendidas y sugerencia de mejoras identificadas."
+artifacts:
+  title: Artefactos del Proceso
+other_diagrams:
+  - picture: "/images/processes/es/SSDP1_2.jpg"
+  - picture: "/images/processes/es/SSDP_IDEF0_v11_LC1.png"
+  - picture: "/images/processes/es/SSDP_IDEF0_v11_LC2.png"
+  - picture: "/images/processes/es/SSDP_IDEF0_v11_LC3.png"
