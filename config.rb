@@ -41,7 +41,7 @@ activate :blog do |blog|
   blog.prefix = "processes"
   blog.sources = "{lang}/{title}"
   blog.permalink = "{lang}/{title}"
-  blog.layout = "process_layout"
+  blog.layout = "process-layout"
   #blog.new_article_template = "source/article-templates/product-template.erb"
 end
 

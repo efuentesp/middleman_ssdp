@@ -1,0 +1,176 @@
+<%= partial 'partials/head' %>
+
+<div id="skipnav"><a href="#maincontent">Inicio</a></div>
+<%= partial 'partials/nav_process' %>
+
+<!-- Main Content -->
+
+<!-- Overview Section -->
+<section id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2><%= current_page.data.name %></h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1">
+        <%= image_tag current_page.data.picture, resize_to: "64x64", :class => 'img-responsive', :alt => current_page.data.name %>
+      </div>
+      <div class="col-lg-11">
+        <span class="text-justify"><%= yield %></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Diagram Section -->
+<section id="process_diagram">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Diagrama del Proceso</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <%= image_tag current_page.data.process_picture, :class => 'img-responsive', :alt => current_page.data.name %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Desciption Section -->
+<section id="process">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Descripción del Proceso</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Entradas</th>
+              <th>Pasos</th>
+              <th>Salidas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <% current_page.data.process.inputs.each do |input| %>
+                    <li><%= input.name %></li>
+                  <% end %>
+                </ul>
+              </td>
+              <td>
+                <ol>
+                  <% current_page.data.process.steps.each do |step| %>
+                    <li><%= step.name %></li>
+                  <% end %>
+                </ol>
+              </td>
+              <td>
+                <ul>
+                  <% current_page.data.process.outputs.each do |output| %>
+                  <li>
+                    <%= output.name %>
+                    <% if output.artifacts %>
+                      <ul>
+                        <% output.artifacts.each do |artifact| %>
+                          <li><%= artifact.name %></li>
+                        <% end %>
+                      </ul>
+                    <% end %>
+                  </li>
+                  <% end %>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role Desciption Section -->
+  <section id="roles">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <br/>
+            <h2>Roles que participan</h2>
+            <hr class="star-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Rol</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% current_page.data.process.roles.each do |role| %>
+              <tr>
+                <td><%= role.acronym %>. <%= role.name %></td>
+                <td><%= role.description %></td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!-- Artifacts Section -->
+<section id="artifacts">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h2>Artefactos usados</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="videos">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h2>Videos explicativos</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+  </div>
+</section>
+
+<!-- End Main Content -->
+
+<%= partial 'partials/footer' %>
+
+<%= partial 'partials/foot' %>

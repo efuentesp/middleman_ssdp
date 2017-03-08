@@ -1,0 +1,12 @@
+---
+date: 2017-03-08 01:16 UTC
+lang: es
+weight: 140
+
+title: PD
+code: PD
+name: Product Delivery
+front_description: ""
+description: ""
+tags:
+---

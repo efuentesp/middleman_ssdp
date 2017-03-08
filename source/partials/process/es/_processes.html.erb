@@ -17,7 +17,7 @@
                   </tr>
                 </theader>
                 <tbody>
-                  <% blog.articles.select {|a| a.data[:lang]=='es' }.sort_by { |b| b.data.title }.each do |process| %>
+                  <% blog.articles.select {|a| a.data[:lang]=='es' }.sort_by { |b| b.data.weight }.each do |process| %>
                     <tr>
                       <td class="">
                         <strong>

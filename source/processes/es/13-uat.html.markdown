@@ -1,7 +1,9 @@
 ---
 date: 2017-03-08 01:16 UTC
 lang: es
-title: 13. UAT
+weight: 130
+
+title: UAT
 code: UAT
 name: User Acceptance Test Support
 front_description: "The process of assisting/helping project stakeholders on one or several of the following activities:

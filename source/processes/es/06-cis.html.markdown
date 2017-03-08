@@ -1,7 +1,9 @@
 ---
 date: 2017-03-08 00:16 UTC
 lang: es
-title: 06. CIS
+weight: 60
+
+title: CIS
 code: CSI
 name: Components Implementation Specification
 front_description: "The process of integrating technical and implementation context considerations into the functional component specification. Technical considerations may include:
