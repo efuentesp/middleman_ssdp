@@ -1,0 +1,37 @@
+<!-- Processes Section -->
+<section id="processes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2><%= t(:development_process) %></h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <table class="table table-striped">
+                <theader>
+                  <tr>
+                    <th class="col-md-5"><%= t(:name) %></th>
+                    <th><%= t(:description) %></th>
+                  </tr>
+                </theader>
+                <tbody>
+                  <% blog('ssdp-process').articles.select {|a| a.data[:lang]==current_page.data.lang }.sort_by { |b| b.data.weight }.each do |process| %>
+                    <tr>
+                      <td class="">
+                        <strong>
+                          <% link_to process.url do %>
+                            <%= process.data.code %>. <%= process.data.name %>
+                          <% end %>
+                        </strong>
+                      </td>
+                      <td class="text-justify"><%= process.data.front_description %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+</section>

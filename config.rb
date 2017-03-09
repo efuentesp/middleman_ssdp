@@ -37,11 +37,20 @@ end
 # end
 
 activate :blog do |blog|
-  blog.name = "process"
-  blog.prefix = "processes"
+  blog.name = "ssdp-process"
+  blog.prefix = "ssdp-processes"
   blog.sources = "{lang}/{title}"
   blog.permalink = "{lang}/{title}"
   blog.layout = "process-layout"
+  #blog.new_article_template = "source/article-templates/product-template.erb"
+end
+
+activate :blog do |blog|
+  blog.name = "ssdp-phase"
+  blog.prefix = "ssdp-phases"
+  blog.sources = "{lang}/{title}"
+  blog.permalink = "{lang}/{title}"
+  blog.layout = "ssdp-phases-layout"
   #blog.new_article_template = "source/article-templates/product-template.erb"
 end
 
@@ -53,6 +62,8 @@ end
 activate :directory_indexes
 activate :sprockets
 activate :middleman_simple_thumbnailer
+
+activate :i18n, :mount_at_root => false
 
 # Build-specific configuration
 configure :build do
