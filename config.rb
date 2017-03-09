@@ -41,7 +41,7 @@ activate :blog do |blog|
   blog.prefix = "ssdp-processes"
   blog.sources = "{lang}/{title}"
   blog.permalink = "{lang}/{title}"
-  blog.layout = "process-layout"
+  blog.layout = "ssdp-process-layout"
   #blog.new_article_template = "source/article-templates/product-template.erb"
 end
 
@@ -51,6 +51,15 @@ activate :blog do |blog|
   blog.sources = "{lang}/{title}"
   blog.permalink = "{lang}/{title}"
   blog.layout = "ssdp-phases-layout"
+  #blog.new_article_template = "source/article-templates/product-template.erb"
+end
+
+activate :blog do |blog|
+  blog.name = "ssdp-role"
+  blog.prefix = "ssdp-roles"
+  blog.sources = "{lang}/{title}"
+  blog.permalink = "{lang}/{title}"
+  blog.layout = "ssdp-roles-layout"
   #blog.new_article_template = "source/article-templates/product-template.erb"
 end
 

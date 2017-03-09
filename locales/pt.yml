@@ -1,9 +1,19 @@
 pt:
+  ssdp: PDSS v3
   development_process: Processo de Desenvolvimento
   practices: Práticas
   service_offering: Oferta de Serviços
   phases: Fases do Desenvolvimento
   name: Nome
   description: Descripción
+  diagram: Diagrama
+  process: Proceso
+  roles: Roles
+  artifacts: Artefactos
+  videos: Videos
   process_diagram: Diagrama do Proceso
   process_artifacts: Artefactos do Proceso
+  process_description: Descripción del Proceso
+  inputs: Entradas
+  outputs: Salidas
+  steps: Pasos
