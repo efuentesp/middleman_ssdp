@@ -5,15 +5,36 @@ pt:
   service_offering: Oferta de Serviços
   phases: Fases do Desenvolvimento
   name: Nome
-  description: Descripción
+  description: Descrição
   diagram: Diagrama
-  process: Proceso
-  roles: Roles
-  artifacts: Artefactos
+  process: Processo
+  roles: Papéis
+  artifacts: Artefatos
   videos: Videos
   process_diagram: Diagrama do Proceso
-  process_artifacts: Artefactos do Proceso
-  process_description: Descripción del Proceso
+  process_artifacts: Artefatos do Proceso
+  process_description: Descrição do Proceso
   inputs: Entradas
-  outputs: Salidas
-  steps: Pasos
+  outputs: Saídas
+  steps: Passos
+
+  activities: Atividades
+  seniorities: Seniorities
+  competencies: Competências
+  tools: Ferramientas
+  training: Treinamento
+  seniority: Seniority
+  comments: Comentários
+  project_size: Tamanho do Projeto
+  compexity: Complexidade
+  expertise: Experiência
+  years_experience: Anos de Experiência
+  certifications: Certificações
+
+  competency: Competência
+  beginner: Beginner
+  junior: Junior
+  proficient: Proficient
+  senior: Senior
+  expert: Expert
+  master: Master

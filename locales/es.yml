@@ -17,3 +17,25 @@ es:
   inputs: Entradas
   outputs: Salidas
   steps: Pasos
+
+  activities: Actividades
+  seniorities: Seniorities
+  competencies: Competencias
+  tools: Herramientas
+  training: Entrenamiento
+
+  seniority: Seniority
+  comments: Cometarios
+  project_size: Tamaño del Proyecto
+  compexity: Complejidad
+  expertise: Experiencia
+  years_experience: Años de Experiencia
+  certifications: Certificaciones
+
+  competency: Competency
+  beginner: Beginner
+  junior: Junior
+  proficient: Proficient
+  senior: Senior
+  expert: Expert
+  master: Master

@@ -1,0 +1,37 @@
+<!-- Roles Section -->
+<section id="roles">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2><%= t(:roles) %></h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <table class="table table-striped">
+                <theader>
+                  <tr>
+                    <th class="col-md-5"><%= t(:name) %></th>
+                    <th><%= t(:description) %></th>
+                  </tr>
+                </theader>
+                <tbody>
+                  <% blog('ssdp-role').articles.select {|a| a.data[:lang]==current_page.data.lang }.sort_by { |b| b.data.weight }.each do |role| %>
+                    <tr>
+                      <td class="">
+                        <strong>
+                          <% link_to role.url do %>
+                            <%= role.data.acronym %>. <%= role.data.name %>
+                          <% end %>
+                        </strong>
+                      </td>
+                      <td class="text-justify"><%= role.data.description %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+</section>

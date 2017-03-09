@@ -3,14 +3,15 @@ date: 2017/01/01
 tags:
 lang: en
 weight: 20
-
 title: REQ
+
 code: REQ
 name: Requirement Development
+picture: "/images/processes/process/process.png"
 front_description: "En este proceso se crea una line base de los artefactos que darán soporte el entendimiento de los objetivos y procesos de negocio del cliente, adquiriendo el conocimiento de negocio y desarrollando las Especificaciones de los Requerimientos Funcionales y No-Funcionales para la Aplicación (nueva o a modificar). Esto con apego y consistencia con el alcance original del proyecto definido en la Solicitud de Trabajo (SOW)."
 description: ""
-picture: "/images/processes/process.png"
 process_picture: "/images/processes/es/process_req.png"
+
 process:
   inputs:
     - name: "PRM. Propuesta o Solicitud de Trabajo (SOW)."
@@ -46,18 +47,23 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
+      link: ""
       description: "Planear Actividades. Validar alcance del producto y autorizar el presupuesto del proyecto."
     - acronym: "BA"
-      name: "Analista de Negocio"
+      name: "Business Analyst"
+      link: "/ssdp-roles/en/ba"
       description: "Encabezar las actividades de generación de los requerimientos y producir sus entregables."
     - acronym: "STH"
       name: "Stakeholder"
+      link: ""
       description: "Validar entregables."
     - acronym: "SPO"
       name: "Patrocinador del Proyecto"
+      link: ""
       description: "Validar alcance del producto y autorizar el presupuesto del proyecto."
     - acronym: "CPM"
       name: "Administrador del Proyecto del Cliente"
+      link: ""
       description: "Validar alcance del producto y autorizar el presupuesto del proyecto."
 ---
 Consiste en entender los procesos y objetivos de negocio del cliente, adquirir el conocimiento de negocio y desarrollar la especificación de los Requerimientos Funcionales y No-Funcionales de la aplicación (nueva o a modificar). Incluye las actividades de: recolectar y entender los requerimientos, analizarlos, especificarlos y validarlos.

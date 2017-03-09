@@ -1,7 +1,7 @@
 ---
 date: 2017/01/01
 category:
-lang: es
+lang: en
 weight: 10
 title: Business Analyst
 
