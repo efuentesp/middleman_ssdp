@@ -23,3 +23,5 @@ gem 'middleman-simple-thumbnailer'
 #gem 'middleman-google-analytics', '~> 3.0'
 #gem 'middleman-robots'
 gem 'builder' # XML Builder
+
+gem 'nokogiri'
