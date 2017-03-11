@@ -39,3 +39,10 @@ es:
   senior: Senior
   expert: Expert
   master: Master
+
+  classroom: Cursos presenciales
+  self-peaced: Auto-aprendizaje
+  duration_hrs: Duración (hrs)
+  skill_level: Nivel
+  table_contents: Tabla de Contenido
+  audience: Audiencia

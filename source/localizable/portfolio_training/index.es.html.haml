@@ -1,0 +1,67 @@
+---
+lang: es
+title: Entrenamientos AppDev
+
+description: ""
+picture: "/images/portfolio/training.png"
+menus:
+  - title: "Cursos presenciales"
+    link: "#classroom"
+  - title: "Auto-aprendizaje"
+    link: "#self-peaced"
+  - title: "AppDev"
+    link: "/es#portfolio"
+---
+= partial 'partials/header'
+
+-# Course: Classroom
+%section{ :id => 'classroom' }
+  %div{ :class => 'container' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12 text-center' }
+        %h2= t(:classroom)
+        %hr{ :class => 'star-primary' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12' }
+        %table{ :class => 'table table-striped' }
+          %theader
+            %tr
+              %th{ :class => 'col-md-4' }= t(:name)
+              %th{ :class => '' }= t(:skill_level)
+              %th{ :class => '' }= t(:duration_hrs)
+              %th{ :class => '' }= t(:audience)
+          %tbody
+            - blog('course').articles.select { |a| a.data[:lang]==current_page.data.lang && a.data[:type]=='Classroom' }.sort_by { |b| b.data.weight }.each do |course|
+              %tr
+                %td
+                  %strong
+                    = link_to course.data.title, course.url
+                %td{ :class => 'text-left' }= course.data.skill_level
+                %td{ :class => 'text-left' }= course.data.duration_hrs
+                %td{ :class => 'text-justify' }= course.data.audience.join(",")
+
+-# Course: Classroom
+%section{ :id => 'self-peaced' }
+  %div{ :class => 'container' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12 text-center' }
+        %h2= t('self-peaced')
+        %hr{ :class => 'star-primary' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12' }
+        %table{ :class => 'table table-striped' }
+          %theader
+            %tr
+              %th{ :class => 'col-md-4' }= t(:name)
+              %th{ :class => '' }= t(:skill_level)
+              %th{ :class => '' }= t(:duration_hrs)
+              %th{ :class => '' }= t(:audience)
+          %tbody
+            - blog('course').articles.select { |a| a.data[:lang]==current_page.data.lang && a.data[:type]=='Self Peaced' }.sort_by { |b| b.data.weight }.each do |course|
+              %tr
+                %td
+                  %strong
+                    = link_to course.data.title, course.url
+                %td{ :class => 'text-left' }= course.data.skill_level
+                %td{ :class => 'text-left' }= course.data.duration_hrs
+                %td{ :class => 'text-justify' }= course.data.audience.join(",")
