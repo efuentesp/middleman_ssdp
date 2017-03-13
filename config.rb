@@ -72,6 +72,15 @@ activate :blog do |blog|
   #blog.new_article_template = "source/article-templates/product-template.erb"
 end
 
+activate :blog do |blog|
+  blog.name = "training-material"
+  blog.prefix = "training-materials"
+  blog.sources = "{lang}/{title}"
+  blog.permalink = "{lang}/{title}"
+  blog.layout = "training-material-layout"
+  #blog.new_article_template = "source/article-templates/product-template.erb"
+end
+
 # activate :google_analytics do |ga|
 #   ga.tracking_id = 'UA-92680708-1'
 #   ga.domain_name = 'prohabit.mx'

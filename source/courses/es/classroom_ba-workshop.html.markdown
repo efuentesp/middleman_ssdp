@@ -11,21 +11,32 @@ duration_hrs: 40
 skill_level: Intermedio
 picture: "/images/portfolio/classroom.png"
 description: "Este taller se enfoca en el rol y responsabilidades de un Analista de Negocio e incluye todos los aspectos necesarios para un análisis de requerimientos para el negocio, y se basa en el “Business Analysis Body of Knowledge (BABOK) de la International Association of Business Analysts (IIBA)”, y abarca los conceptos básicos y áreas de conocimiento descritas en esa guía con un enfoque teórico y práctico."
+previous_knlowdege:
+  - Lectura del curso para Analistas de Negocio de Softtek (Softtek University).
+  - Aprobar el examen de admisión al taller.
 audience:
   - Analista de Negocio
 table_contents:
-  - name: Presentación
+  - "Introducción al Taller"
+  - "Aplicación del Proceso Personal que ayuda a hacer mejores Analistas."
+  - "Lectura del Caso de Estudio e identificación de: Requerimientos, Entidades de Negocio y Agentes Externos."
+  - "Delimitar las fronteras del sistema a través del Diagrama de Contexto."
+  - "Describir el conocimiento del negocio a través del Modelo de Dominio."
+  - "Describir correctamente los Requerimientos Funcionales a través de Escenarios y Ejemplos."
+  - "Describir los Requerimientos No-Funcionales."
+  - "Preparación de entrevistas exitosas."
+  - "Uso de la técnica de Storyboarding para detallar mejor los Requerimientos."
+  - "Conteo del Tamaño funcional de una aplicación con COSMIC Function Points."
+  - "Uso correcto de los Diagramas de Estados."
+  - "Modelado de los objetivos de una aplicación a través del Diagrama de Casos de Uso."
+  - "Redacción del comportamiento de la aplicación a través de Casos de Uso."
+
 ---
 **Introducción**
 
 El rol de un Analista de Negocio (Business Analyst) es el de identificar las necesidades del negocio y comunicarlas al equipo de desarrollo de software; por lo que es clave para definir los requerimientos de un proyecto en sus etapas tempranas, así como para: planear, definir y validar el alcance del proyecto. Por lo que es importante que el Analista de Negocio conozca el conjunto de tareas, conocimientos, y técnicas requeridas para identificar las necesidades de negocio y así determinar soluciones a los problemas a los cuales se enfrenta actualmente la organización.
 
 Este taller esta diseñado para dar a los participantes un entendimiento básico de los beneficios, funciones e impacto de este importante rol.
-
-**Pre-requisitos**
-
-*	Lectura del curso para Analistas de Negocio de Softtek (Softtek University).
-*	Aprobar el examen de admisión al taller.
 
 **Objetivos**
 
@@ -69,55 +80,3 @@ Este taller esta diseñado para dar a los participantes un entendimiento básico
 *	Superar las fallas y trampas comunes  encontradas cuando se usa el enfoque por casos de uso.
 *	Ayudar a los equipos de análisis a entender y aplicar los métodos usados actualmente en la industria para descubrir y documentar los requerimientos de un proyecto.
 *	Mejorar el control del alcance del proyecto al identificar y conseguir el consenso sobre los requerimientos a incluir como parte del proyecto.
-
-**Estructura del Taller**
-
-* Parte I:
-  1.	Introducción al Taller
-    1. Expectativas del Curso y presentación de los participantes.
-  2.	Conceptos Fundamentales (Base de Conocimientos)
-    1.	Términos comunes.
-    2.	El rol del Analista de Negocio.
-    3.	Definición de las Áreas de Conocimiento.
-    4.	La Disciplina de Requerimientos dentro del PDSS.
-  3.	Descubrir los Requerimientos
-    1.	Objetivos:
-      *	Entender las técnicas usadas comúnmente para encontrar los requerimientos;
-      *	Seleccionar la técnica o técnicas apropiadas de acuerdo a la situación;
-      *	Determinar qué se necesita preparar, y cómo llevar acabo adecuadamente la recolección de los requerimientos.
-    2.	Introducción.
-    3.	Búsqueda de objetivos estratégicos del negocio.
-    4.	Determinación de los problemas u oportunidades del negocio.
-    5.	Identificación de soluciones potenciales.
-    6.	Bosquejo preeliminar del alcance del proyecto.
-    7.	Identificación y cuantificación de los beneficios.
-    8.	Técnicas
-      1.	Lluvia de ideas.
-      2.	Análisis de la documentación existente.
-      3.	Storyboarding.
-      4.	Entrevista.
-      5.	Observación.
-      6.	Prototipado.
-      7.	Taller de Requerimientos.
-  4.	Análisis y documentación de Requerimientos
-    1.	Objetivos:
-      *	Definir y describir las características de una solución aceptable al problema de negocio, de manera que el equipo del proyecto tenga un  entendimiento claro de cómo diseñar e implementarla;
-      *	Generar modelos de análisis y determinar “huecos” en la información proporcionada por los stakeholders;
-      *	Asegurar la factibilidad de que los requerimientos propuestos soporten las necesidades de usuario, metas y objetivos del negocio;
-      *	Asegurar el consenso entre todos los stakeholders sobre el comportamiento de la solución.
-    2.	Introducción.
-    3.	Delimitar las fronteras del problema y el alcance de la solución.
-      1.	Modelos de Flujo y de Procesos
-      2.	Eventos de Negocio
-    4.	Creación de un Modelo de Dominio del Negocio.
-      1.	Glosario de Términos de Negocio
-      2.	Modelo Conceptual
-    5.	Describir los requerimientos que afecten a un grupo particular de usuarios (Requerimientos de Usuario).
-    6.	Describir el comportamiento deseado de la solución (Requerimientos Funcionales).
-      1.	Reglas de Negocio
-      2.	Casos de Uso
-    7.	Describir los Requerimientos No-Funcionales.
-    8.	Determinar los Supuestos y Restricciones.
-      1.	Determinar los Atributos de los Requerimientos.
-      2.	Creación del Documento de Requerimientos.
-      3.	Asegurar que los Requerimientos descritos son lo suficientemente claros para su diseño e implementación.

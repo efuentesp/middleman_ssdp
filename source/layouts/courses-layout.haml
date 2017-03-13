@@ -57,13 +57,41 @@
                 %td
                   %strong= current_page.data.audience.join(',')
 
--# Overview Section
+-# Previous Knowledge Section
+%section{ :id => 'previous_knlowdege' }
+  %div{ :class => 'container' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12 text-center' }
+        %br
+        %h2= t(:previous_knlowdege)
+        %hr{ :class => 'star-primary' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12' }
+        %ol
+          - current_page.data.previous_knlowdege.each do |knowledge|
+            %li= knowledge
+
+-# Table of Contents Section
 %section{ :id => 'table_contents' }
   %div{ :class => 'container' }
     %div{ :class => 'row' }
       %div{ :class => 'col-lg-12 text-center' }
         %br
         %h2= t(:table_contents)
+        %hr{ :class => 'star-primary' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12' }
+        %ol
+          - current_page.data.table_contents.each do |content|
+            %li= content
+
+-# Description Section
+%section{ :id => 'summary' }
+  %div{ :class => 'container' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12 text-center' }
+        %br
+        %h2= t(:description)
         %hr{ :class => 'star-primary' }
     %div{ :class => 'row' }
       %div{ :class => 'col-lg-12' }

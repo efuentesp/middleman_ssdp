@@ -1,0 +1,33 @@
+= partial 'partials/head'
+
+%div{ :id => 'skipnav'}
+  = link_to 'Inicio', '#maincontent'
+= partial 'partials/training/self-paced-navigation'
+
+-# Main Content
+
+-# Training Materials Section
+%section{ :id => 'training_materials' }
+  %div{ :class => 'container' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12 text-center' }
+        %br
+        %h2= t(:training_materials)
+        %hr{ :class => 'star-primary' }
+    - current_page.data.training_materials.categories.each do |category|
+      %h3= category.name
+      %div{ :class => 'row' }
+        %div{ :class => 'col-lg-12' }
+          %table{ :class => 'table table-condensed' }
+            %thead
+              %tr
+                %th= t(:name)
+                %th{ :class => 'col-md-1' }= t(:source)
+                %th{ :class => 'col-md-1' }= t(:type)
+            %tbody
+              - category.resources.each do |resource|
+                %tr
+                  %td
+                    = link_to resource.name, resource.link
+                  %td= resource.source
+                  %td= resource.type

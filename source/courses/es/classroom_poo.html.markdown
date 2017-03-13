@@ -2,18 +2,19 @@
 date: 2017/01/01
 category:
 lang: es
-weight: 10
+weight: 20
 title: Programación Orientada a Objetos​
 
 name: Programación Orientada a Objetos​
 type: Classroom
 duration_hrs: 24
 skill_level: Básico
-picture: "/images/processes/roles/role.png"
+picture: "/images/portfolio/classroom.png"
 description: ""
-link: ""
+previous_knlowdege:
+  -
 audience:
   - Ingeniero de Software
 table_contents:
-  - name: Presentación
+  - 
 ---

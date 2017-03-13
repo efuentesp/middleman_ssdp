@@ -2,7 +2,7 @@
 lang: es
 title: Entrenamientos AppDev
 
-description: ""
+description: "El Entrenamiento es parte escencial en el desarrollo profesional. A través de cursos presenciales o siendo autodidacta puedes adquirir los conocimientos que exige tu rol para ejercerlo responsablemente.<br/><br/> El Grupo de Especialistas de la Práctica (PSG) te recomiendan visitar la página de tu especialidad donde podrás encontrar material online valioso para autoaprendizaje.  Adicionalmente dentro de Application Development se imparten algunos cursos presenciales que son administrador por el área de Desarrollo Humano.​"
 picture: "/images/portfolio/training.png"
 menus:
   - title: "Cursos presenciales"
@@ -40,7 +40,7 @@ menus:
                 %td{ :class => 'text-left' }= course.data.duration_hrs
                 %td{ :class => 'text-justify' }= course.data.audience.join(",")
 
--# Course: Classroom
+-# Course: Self Paced
 %section{ :id => 'self-peaced' }
   %div{ :class => 'container' }
     %div{ :class => 'row' }
@@ -54,14 +54,10 @@ menus:
             %tr
               %th{ :class => 'col-md-4' }= t(:name)
               %th{ :class => '' }= t(:skill_level)
-              %th{ :class => '' }= t(:duration_hrs)
-              %th{ :class => '' }= t(:audience)
           %tbody
-            - blog('course').articles.select { |a| a.data[:lang]==current_page.data.lang && a.data[:type]=='Self Peaced' }.sort_by { |b| b.data.weight }.each do |course|
+            - blog('training-material').articles.select { |a| a.data[:lang]==current_page.data.lang }.sort_by { |b| b.data.weight }.each do |course|
               %tr
                 %td
                   %strong
                     = link_to course.data.title, course.url
                 %td{ :class => 'text-left' }= course.data.skill_level
-                %td{ :class => 'text-left' }= course.data.duration_hrs
-                %td{ :class => 'text-justify' }= course.data.audience.join(",")
