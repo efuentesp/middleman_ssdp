@@ -1,5 +1,6 @@
 en:
   ssdp: SSDP v3
+  psg: Practice Specialist Group
   development_process: Development Process
   practices: Practices
   service_offering: Service Offering
@@ -8,6 +9,7 @@ en:
   description: Description
   diagram: Diagram
   process: Process
+  role: Role
   roles: Roles
   artifacts: Artifacts
   videos: Videos
@@ -54,3 +56,4 @@ en:
   engagement_models: Engagement Models
   career_plan: Career Plan
   estimation_models: Estimation Models
+  email: eMail

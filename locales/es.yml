@@ -1,5 +1,6 @@
 es:
   ssdp: PDSS v3
+  psg: Grupo de Especialistas de Práctica
   development_process: Proceso de Desarrollo
   practices: Prácticas
   service_offering: Oferta de Servicios
@@ -8,6 +9,7 @@ es:
   description: Descripción
   diagram: Diagrama
   process: Proceso
+  role: Rol
   roles: Roles
   artifacts: Artefactos
   videos: Videos
@@ -54,3 +56,4 @@ es:
   engagement_models: Modelos de Compromiso
   career_plan: Plan de Carrera
   estimation_models: Modelos de Estimación
+  email: eMail

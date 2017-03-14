@@ -1,0 +1,147 @@
+---
+lang: es
+title: PSG
+picture: "/images/rocket.png"
+
+menus:
+  - title: "PSG"
+    link: "#psg"
+  - title: "AppDev"
+    link: "/es#portfolio"
+
+members:
+  - name: Ruth Delgado Moreno
+    roles:
+      - Coordinadora
+    email: rdelgado@softtek.com
+    picture: "/images/psg/RDM.JPG"
+  - name: Fernando Razo Zuñiga
+    roles:
+      - Administración de Proyectos
+    email: fernando.razo@softtek.com
+    picture: "/images/psg/FRZ.JPG"
+  - name: Jorge Velázquez Rodríguez
+    roles:
+      - Administración de Proyectos
+      - Pruebas
+    email: jorge.velazquez@softtek.com
+    picture: "/images/psg/JOVR.JPG"
+  - name: Javier Aguilar Sánchez
+    roles:
+      - Arquitectura Java
+    email: javier.aguilar@softtek.com
+    picture: "/images/psg/JAAS.JPG"
+  - name: Joel Pérez Meneses
+    roles:
+      - Desarrollo Java
+    email: joel.perez@softtek.com
+    picture: "/images/psg/JOPM.JPG"
+  - name: Alfredo Reyes Carlos
+    roles:
+      - Arquitectura Microsoft
+    email: alfredo.reyes@softtek.com
+    picture: "/images/psg/ALRC2.JPG"
+  - name: César Mendoza Canales
+    roles:
+      - Arquitectura Microsoft
+      - Mobile Xamarin
+    email: cesar.mendoza@softtek.com
+    picture: "/images/psg/CEMC.JPG"
+  - name: Alejandro Silva Rangel
+    roles:
+      - PSP/TSP
+    email: asilva@softtek.com
+    picture: "/images/psg/ASR.JPG"
+  - name: Victor Hugo Moreno Montiel
+    roles:
+      - PSP/TSP
+      - Arquitectura Mainframe
+    email: victor.moreno@softtek.com
+    picture: "/images/psg/VHMM.JPG"
+  - name: Sol Maria Estrada Soto
+    roles:
+      - PSP/TSP
+    email: sol.estrada@softtek.com
+    picture: "/images/psg/SMES.JPG"
+  - name: Edgar Felipe Fuentes Perea
+    roles:
+      - Análisis de Negocio
+      - Ingeniería de Software
+    email: efuentes@softtek.com
+    picture: "/images/psg/EFP.JPG"
+  - name: Francisca Ericela Cerqueda García
+    roles:
+      - Análisis de Negocio
+    email: francisca.cerqueda@softtek.com
+    picture: "/images/psg/FECG.JPG"
+  - name: Maria Martha de Jesús Domínguez Calzada
+    roles:
+      - Análisis de Negocio
+    email: maria.dominguez@softtek.com
+    picture: "/images/psg/MDC.JPG"
+  - name: Jacqueline Itzel Razo Hernandez
+    roles:
+      - Análisis de Negocio
+    email: jacqueline.razo@softtek.com
+    picture: "/images/psg/JIRH.JPG"
+
+---
+= partial 'partials/header'
+
+-# Portfolio Section
+%section{ :id => 'psg' }
+  %div{ :class => 'container' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12 text-center' }
+        %h2= t(:psg)
+        %hr{ :class => 'star-primary' }
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12' }
+        %h4
+          ¿Qué es el PSG?
+        %span
+          El Practice Specialist Group (PSG), es un equipo de personas de la Práctica de Application Development tienen los conocimientos y experiencia para desempeñarse como :
+          %br
+          %br
+        %ul
+          %li Instructores de cursos
+          %li Mentores y Revisores sobre el proceso que tienen a cargo
+          %li Entrevistadores de los roles asociados con el proceso a cargo
+          %li Selección de mejores prácticas en el proceso a cargo
+          %li Implantar del proceso a cargo en equipos de trabajo
+          %li Realizar entrevistas a candidatos
+        %br
+        %span
+          Y adicionalmente son los responsables de la revisión de las propuestas que se entregan a los clientes.
+          %br
+          %br
+          Los modelos que rigen el ámbito de trabajo del PSG son:
+          %br
+          %br
+        %ul
+          %li Modelos de engagement de la oferta de Application Development
+          %li Modelos de estimación
+          %li PDSS
+          %li PSP
+          %li CMMi
+        %br
+        %br
+    %div{ :class => 'row' }
+      %div{ :class => 'col-lg-12' }
+        %h4 ¿Quienes integran el PSG?
+        %table{ :class => 'table' }
+          %theader
+            %tr
+              %th
+              %th= t(:name)
+              %th= t(:role)
+              %th= t(:email)
+          %tbody
+            - current_page.data.members.each do |member|
+              %tr
+                %td= image_tag member.picture, resize_to: "96x96", :class => 'img-responsive img-circle', :alt => member.name
+                %td= member.name
+                %td
+                  %strong= member.roles.join(", ")
+                %td
+                  = link_to member.email, "mailto:#{member.email}", :target => '_top'
