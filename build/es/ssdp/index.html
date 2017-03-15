@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <meta name="WebPartPageExpansion" content="full" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PDSS v3 Tradicional</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <SharePoint:CssRegistration Name="default" runat="server"/>
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top" class="index">
+
+
+<div id="skipnav"><a href="#maincontent">Inicio</a></div>
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">PDSS v3 Tradicional</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                  <li class="page-scroll">
+                    <a href="#maincontent">Resúmen</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="#phases">Fases</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="#process_diagram">Diagrama</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="#processes">Procesos</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="#roles">Roles</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="#artifacts">Artefactos</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="/es">AppDev</a>
+                  </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<!-- Main Content -->
+<!-- Header -->
+<header>
+    <div class="container" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="col-lg-12">
+              <img src="/images/processes/ssdp.100x100.png" class="img-responsive" alt="PDSS v3 Tradicional" />
+              <div class="intro-text">
+                  <h1 class="name">PDSS v3 Tradicional</h1>
+                  <hr class="star-light">
+                  <strong class="text-justify">El Proceso de Desarrollo de Software de Softtek se divide en 6 fases secuenciales distribuidas en el tiempo, cada una de ellas cuenta con un hito (milestone) principal; cada fase es esencialmente un lapso de tiempo que ocurre entre 2 hitos principales. Al final de cada fase es hecha una valoración para determinar si los objetivos de ella fueron alcanzados. Una valoración satisfactoria de la fase permite moverse a la siguiente. Cada fase está compuesta por un conjunto de actividades y productos asignados a un grupo de roles específicos.</strong>
+              </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Phases Section -->
+<section id="phases">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Fases del Desarrollo</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <table class="table table-striped">
+                <theader>
+                  <tr>
+                    <th class="col-md-4">Nombre</th>
+                    <th>Descripción</th>
+                  </tr>
+                </theader>
+                <tbody>
+
+                    <tr>
+                      <td>
+                        <strong>Compromiso</strong>
+                      </td>
+                      <td class="text-justify">Esta fase es parte del ciclo de Ventas. Se encarga de transformar los requerimientos del cliente en una propuesta de solución que es acorde con la información proporcionada y que es factible para su operación respecto al modelo de compromiso seleccionado de Desarrollo de Aplicaciones y a los elementos que cada uno de estos establece.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Requerimientos y Diseño de la Solución</strong>
+                      </td>
+                      <td class="text-justify">Durante esta fase, Softtek analiza el problema y crea un documento con la solución. Después de esto, Softtek modela la solución y propone un framework para la arquitectura.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Construcción y Verificación</strong>
+                      </td>
+                      <td class="text-justify">Durante esta fase se detallan los Casos de Uso, se codifica la solución y se prueba para asegurar que se cumplieron los Requerimientos establecidos en la fase anterior.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Validación</strong>
+                      </td>
+                      <td class="text-justify">Durante esta fase Softtek dará apoyo al usuario en el desempeño de sus Pruebas de Aceptación de Usuario (UAT), como parte de esta fase se corregirá cualquier defecto encontrado antes de su instalación y entrega final.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Soporte</strong>
+                      </td>
+                      <td class="text-justify"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Administración de Proyecto</strong>
+                      </td>
+                      <td class="text-justify">Durante ésta fase se establecen las prácticas necesarias para el correcto inicio, seguimiento a ejecución y cierre de los proyectos de Software. Su principal objetivo es mantener el plan del proyecto bajo un control adecuado que permita dar visibilidad de su alcance y cambios a lo largo de su ejecución, así como identificar y tomar las acciones correctas a tiempo para lograr el resultado final comprometido.</td>
+                    </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Diagram Section -->
+<section id="process_diagram">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Diagrama de Proceso</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <img src="/images/processes/es/ssdp_diagram.png" class="" alt="PDSS v3 Tradicional" />
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Processes Section -->
+<section id="processes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Proceso de Desarrollo</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <table class="table table-striped">
+                <theader>
+                  <tr>
+                    <th class="col-md-5">Nombre</th>
+                    <th>Descripción</th>
+                  </tr>
+                </theader>
+                <tbody>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/01-eng/">                            ENG. Compromiso
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Este proceso es parte del ciclo de Ventas. Se encarga de transformar los requerimientos del cliente en una propuesta de solución que es acorde con  la información proporcionada y que es factible para  su operación respecto al modelo de compromiso  seleccionado de Desarrollo de Aplicaciones y a los elementos que cada uno de estos establece.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/02-req/">                            REQ. Desarrollo de los Requerimientos
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">En este proceso se crea una line base de los artefactos que darán soporte el entendimiento de los objetivos y procesos de negocio del cliente, adquiriendo el conocimiento de negocio y desarrollando las Especificaciones de los Requerimientos Funcionales y No-Funcionales para la Aplicación (nueva o a modificar). Esto con apego y consistencia con el alcance original del proyecto definido en la Solicitud de Trabajo (SOW).</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/03-arc/">                            ARC. Diseño e Implementación de la Arquitectura
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">En este proceso se tomarán las decisiones y se definirá la plataforma sobre la cual se basará la Aplicación. Como resultado de la toma de decisiones técnicas se implementará tanto el framework y los subsistemas de soporte necesarios que satisfagan los requerimientos funcionales y no-funcionales.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/04-sfd/">                            SFD. Diseño Funcional de la Solución
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Define y diseña una solución específica a los Requerimientos Funcionales y No-Funcionales aprobados del proyecto.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/07-gui/">                            GUI. Diseño de la Interfaz Gráfica de Usuario
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Transforma los Prototipos de Baja-fidelidad (layouts de interfaz) en  Prototipos de Alta-Fidelidad (HTML o Formas) de acuerdo a los estándares de Interfaz de Usuario y a los Patrones Funcionales autorizados para la aplicación.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/08-ctr/">                            CTR. Construcción de Componentes
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Este proceso incluye el diseño de la estructura interna (identificando y diseñando los componentes técnicos), codificando y probando a profundidad los componentes funcionales. La construcción de los componentes será apoyada por el uso de un generador de código para esta etapa.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/09-int/">                            INT. Integración del Sistema
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Es el proceso de integración de los componentes funcionales en un sistema completo, se prueban las interacciones directas entre los componentes funcionales.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/10-std/">                            STD. Diseño de las Pruebas de Sistema
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Es el proceso de asistencia/ayuda a los stakeholders del proyecto durante sus pruebas y aprobación, incluye la corrección de cualquier defecto durante este proceso.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/11-ste/">                            STE. Ejecución de las Pruebas de Sistema
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Es el proceso de ejecución de las pruebas integrales de la aplicación, para validar la correcta ejecución “punta-a-punta” del proceso de negocio, y el cumplimiento de los requerimientos de desempeño en un ambiente de producción (o similar) bajo condiciones de estrés.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/12-doc/">                            DOC. Documentación Técnica y de Usuario
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Es el proceso de generación de la Documentación para el equipo técnico del cliente (liberación/instalación, configuración y estructura técnica interna) y para la comunidad de usuarios (manual de usuario final).</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/es/13-uat/">                            UAT. Soporte a las Pruebas de Aceptación
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Es el proceso de asistencia/ayuda a los stakeholders del proyecto durante sus pruebas y aprobación, incluye la corrección de cualquier defecto durante este proceso.</td>
+                    </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Roles Section -->
+<section id="roles">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Roles</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <table class="table table-striped">
+                <theader>
+                  <tr>
+                    <th class="col-md-5">Nombre</th>
+                    <th>Descripción</th>
+                  </tr>
+                </theader>
+                <tbody>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-roles/es/ba/">                            BA. Business Analyst
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Un Business Analyst es el enlace entre Negocio y Tecnología para definir los Requerimientos de Software (descubrirlos, entenderlos, analizarlos, validarlos y comunicarlos). Realizar Especificaciones Funcionales que satisfagan los requerimientos y soporten el Desarrollo del Software así como el Proceso de Pruebas de Aceptación de Usuario.</td>
+                    </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Artifacts Section -->
+<section id="artifacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Artefactos del Proceso</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+</section>
+
+<!-- Other Processes Section -->
+<section id="processes">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="/images/processes/es/SSDP1_2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="/images/processes/es/SSDP_IDEF0_v11_LC1.png" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="/images/processes/es/SSDP_IDEF0_v11_LC2.png" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="/images/processes/es/SSDP_IDEF0_v11_LC3.png" alt="" />
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- End Main Content -->
+
+<!-- Footer -->
+<footer class="text-center">
+    <!-- <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Redes Sociales</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Softtek 2017
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+		<script src="/javascripts/all.js"></script>
+  </body>
+</html>
+
