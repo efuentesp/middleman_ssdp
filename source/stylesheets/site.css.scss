@@ -7,3 +7,14 @@
 
 @import "freelancer.css";
 @import "cards.css";
+
+/* Sharepoint CSS override */
+
+.ms-rtestate-field h1,
+h1.ms-rteElement-H1,
+.ms-rtestate-field h2,
+h2.ms-rteElement-H2
+{
+line-height:1.4;
+/* [ReplaceColor(themeColor:"ContentAccent1")] */ color:#000000;
+}
