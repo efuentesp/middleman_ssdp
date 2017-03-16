@@ -8140,3 +8140,7 @@ h2.ms-rteElement-H2 {
   line-height: 1.4;
   /* [ReplaceColor(themeColor:"ContentAccent1")] */
   color: #000000; }
+
+/* Hide left bar in Sharepoint */
+#sideNavBox {DISPLAY: none}
+#contentBox {MARGIN-LEFT: 5px}
