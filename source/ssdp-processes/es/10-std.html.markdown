@@ -48,21 +48,21 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
-      link: ""
+      link: "/ssdp-roles/es/pl"
       description: "Planear Actividades."
     - acronym: "BA"
       name: "Analista de negocio"
-      link: ""
+      link: "/ssdp-roles/es/ba"
       description: "Participa en las actividades de diseño de pruebas de sistema."
     - acronym: "TE"
       name: "Ingeniero de pruebas"
-      link: ""
+      link: "/ssdp-roles/es/te"
       description: "Diseñar y preparar testware y generar scripts de pruebas de desempeño."
     - acronym: "STH"
       name: "Stakeholder"
-      link: ""
+      link: "/ssdp-roles/es/sth"
       description: "Validar escenarios de prueba (precisión)​."
 ---
 Es el proceso de definición de la estrategia de pruebas y generación del testware de sistemas a verificar:
-  (1) La correcta ejecución del proceso de negocio de inicio a fin para los escenarios de operación esperados (ciclos de negocio completos), y 
+  (1) La correcta ejecución del proceso de negocio de inicio a fin para los escenarios de operación esperados (ciclos de negocio completos), y
   (2) Desempeño aceptable al estresar el sistema bajo los límites de operación esperados (concurrencia, volúmenes de datos y frecuencia de transacciones)

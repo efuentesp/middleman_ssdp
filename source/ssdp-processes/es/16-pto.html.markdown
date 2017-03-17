@@ -79,15 +79,15 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
-      link: ""
+      link: "/ssdp-roles/es/pl"
       description: "Es el responsable junto con su equipo de establecer la estrategia y la planeación del proyecto para cumplir los compromisos establecidos con el cliente."
     - acronym: "DM"
       name: "Delivery Manager"
-      link: ""
+      link: "/ssdp-roles/es/dm"
       description: " Gerente de Entrega: responsable de rendir cuentas hacia la dirección por los proyectos asignados."
     - acronym: "TM"
       name: "Miembros del Equipo"
-      link: ""
+      link: "/ssdp-roles/es/tm"
       description: "Cada integrante del equipo de trabajo es responsable de actualizar la información del plan con valores reales de duración y esfuerzo aplicado de sus tareas y productos asignados​"
 ---
 Proceso que permite incluir los mecanismos de control apropiados para conocer el avance y progreso del proyecto con métricas de desempeño así como la toma de decisiones basada en datos y establecer acciones correctivas sobre desviaciones para  poder asegurar la conclusión exitosa en tiempo y presupuesto.

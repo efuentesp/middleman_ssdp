@@ -47,7 +47,7 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
-      link: ""
+      link: "/ssdp-roles/es/pl"
       description: "Planear Actividades. Validar alcance del producto y autorizar el presupuesto del proyecto."
     - acronym: "BA"
       name: "Analista de Negocio"
@@ -55,15 +55,15 @@ process:
       description: "Encabezar las actividades de generación de los requerimientos y producir sus entregables."
     - acronym: "STH"
       name: "Stakeholder"
-      link: ""
+      link: "/ssdp-roles/es/sth"
       description: "Validar entregables."
     - acronym: "SPO"
       name: "Patrocinador del Proyecto"
-      link: ""
+      link: "/ssdp-roles/es/spo"
       description: "Validar alcance del producto y autorizar el presupuesto del proyecto."
     - acronym: "CPM"
       name: "Administrador del Proyecto del Cliente"
-      link: ""
+      link: "/ssdp-roles/es/cpm"
       description: "Validar alcance del producto y autorizar el presupuesto del proyecto."
 ---
 Consiste en entender los procesos y objetivos de negocio del cliente, adquirir el conocimiento de negocio y desarrollar la especificación de los Requerimientos Funcionales y No-Funcionales de la aplicación (nueva o a modificar). Incluye las actividades de: recolectar y entender los requerimientos, analizarlos, especificarlos y validarlos.

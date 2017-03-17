@@ -66,19 +66,19 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
-      link: ""
+      link: "/ssdp-roles/es/pl"
       description: "Planear Actividades. Validar alcance del producto y autorizar el presupuesto del proyecto."
     - acronym: "SA"
       name: "Arquitecto de Software"
-      link: ""
+      link: "/ssdp-roles/es/sa"
       description: "Encabezar las actividades de diseño de la arquitectura y su implementación, y generar sus productos entregables."
     - acronym: "BA"
       name: "Analista de Negocio"
-      link: ""
+      link: "/ssdp-roles/es/ba"
       description: "Proveer de entradas al proceso (requerimientos funcionales)."
     - acronym: "CSA"
       name: "Responsable de IT del Cliente y/o Arquitecto de la Aplicación"
-      link: ""
+      link: "/ssdp-roles/es/csa"
       description: "Definir los requerimientos técnicos, definir los estándares técnicos y validar sus entregables."
 ---
 Consiste en la toma de decisiones técnicas sobre la aplicación a ser implementada y sobre la plataforma sobre la cual será ejecutada, así como la implementación del framework de la aplicación y subsistemas de soporte que cumplan con los requerimientos funcionales y no-funcionales establecidos.

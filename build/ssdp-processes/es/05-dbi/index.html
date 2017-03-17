@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DBI</title>
+    <meta name="description" content="">
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="page-top" class="index">
+
+
+<div id="skipnav"><a href="#maincontent">Inicio</a></div>
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">DBI</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#overview">Descripción</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#process_diagram">Diagrama</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#process">Proceso</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#roles">Roles</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#artifacts">Artefactos</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#videos">Videos</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="/es/ssdp#processes">PDSS v3</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<!-- Main Content -->
+
+<!-- Overview Section -->
+<section id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Diseño e Implementación de la Base de Datos</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1">
+        <img src="/images/processes/process/process.64x64.png" class="img-responsive" alt="Diseño e Implementación de la Base de Datos" />
+      </div>
+      <div class="col-lg-11">
+        <span class="text-justify"><p>Es el proceso de transformar el modelo de datos lógico a un modelo físico de base de datos capaz de satisfacer las peticiones acceso a los datos desde los componentes funcionales, almacenar los volúmenes de datos esperados, satisfacer los requerimientos de desempeño y concurrencia, y preservar la integridad de la información almacenada y privacidad.</p>
+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Diagram Section -->
+<section id="process_diagram">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Diagrama de Proceso</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="/images/processes/es/process_dbi.png" class="img-responsive" alt="Diseño e Implementación de la Base de Datos" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Desciption Section -->
+<section id="process">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Descripción del Proceso</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col-md-4">Entradas</th>
+              <th class="col-md-4">Pasos</th>
+              <th class="col-md-4">Salidas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                    <li>DOM. Modelo Lógico (Entidad-Relación).</li>
+                    <li>NFR. Especificación de requerimientos no funcionales (estimados de volumen y de desempeño).</li>
+                    <li>DBS. Estándares de Base de datos [del cliente y de Softtek].</li>
+                    <li>ARS. Especificación de arquitectura de aplicación. Modelos generales de la arquitectura. [especificación de solución a los requerimientos no funcionales].</li>
+                    <li>SEC. Estándares de seguridad SSecPro.</li>
+                    <li>FCS. Especificación de los componentes funcionales [opcional, para complementar la inspección y para la optimización de accesos].</li>
+                </ul>
+              </td>
+              <td>
+                <ol>
+                    <li>Inspeccionar el modelo de estructura de datos – soporta la persistencia y solicitudes de acceso a los datos descritos en las especificaciones de componentes funcionales</li>
+                    <li>Identificar los estándares, lineamientos y restricciones para la implementación física de la base de datos (provistos por el cliente</li>
+                    <li>Generar el modelo lógico de la base de datos y define reglas de integridad y restricciones (llaves primarias, llaves foráneas y restricciones de dominio)</li>
+                    <li>Normalizar el modelo lógico de la base de datos (3ra Forma Normal) e incluir estructuras de datos redundantes (de-normalización y consolidación de repositorios) para la optimización del desempeño</li>
+                    <li>Identificar columnas de control para administración de concurrencia y mecanismo de bitácora (timestamps, registro de versiones, usuarios que crearon y actualizaron)</li>
+                    <li>Diseñar la estructura de la base de datos (tablas, columnas, atributos de las columnas) cumpliendo con las convenciones de nombres y estándares.</li>
+                    <li>Diseñar el panorama de instancias de la base de datos (instancias para desarrollo, pruebas y producción; localización requerida, espacios y configuración).</li>
+                    <li>Implementar las instancias de la base de datos (desarrollo y pruebas).</li>
+                    <li>Diseñar e implementar la seguridad de acceso a la base de datos (considerando los requerimientos de seguridad,  la arquitectura, el documento de Administración de la Configuración y los estándares de seguridad de SSecPro).</li>
+                    <li>Identificar e implementar objetos de la base de datos (indices, vistas, restricciones y triggers)</li>
+                    <li>Verificar el modelo de base de datos físico contra los requerimientos de volumen y de desempeño.</li>
+                    <li>Establecer la línea base del modelo de datos físico y proceso de administración de cambios.</li>
+                    <li>Especificar el mapeo entre el modelo de estructura de datos de dominio y el modelo físico de la base de datos (ORM)</li>
+                    <li>Desarrollar y probar la capa de acceso a datos de la aplicación basada en el ORM (Mapeo Objeto Relacional)</li>
+                    <li>Diseñar e implementar procedimientos de almacenamiento y de respaldo/recuperación [opcional].</li>
+                    <li>Post-mortem DBI</li>
+                </ol>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    PDM. Modelo de base de datos físico (DDL).
+                  </li>
+                  <li>
+                    DBI. Instancias de la base de datos de desarrollo y pruebas.
+                  </li>
+                  <li>
+                    ORM. Mapeo objeto relacional (mapeo de la estructura de datos de dominio al modelo de base de datos físico).
+                  </li>
+                  <li>
+                    DAL. Capa de acceso de datos de la aplicación (funciones de acceso a la base de datos o componentes de mapeo objeto-relacional) [Implementados y probados].
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role Desciption Section -->
+  <section id="roles">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <br/>
+            <h2>Roles</h2>
+            <hr class="star-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+<a href="/ssdp-roles/es/pl">                    <strong>PL.</strong> Líder de Proyecto
+</a>                </td>
+                <td>Planear Actividades.</td>
+              </tr>
+              <tr>
+                <td>
+<a href="/ssdp-roles/es/dba">                    <strong>DBA.</strong> Administrador de la Base de Datos
+</a>                </td>
+                <td>Encabezar las actividades de diseño e implementación de la base de datos y producir entregables.</td>
+              </tr>
+              <tr>
+                <td>
+<a href="/ssdp-roles/es/ba">                    <strong>BA.</strong> Analista de Negocio
+</a>                </td>
+                <td>Proveer el modelo de base de datos lógico (modelo de dominio) y especificaciones de componentes funcionales.</td>
+              </tr>
+              <tr>
+                <td>
+<a href="/ssdp-roles/es/sa">                    <strong>SA.</strong> Arquitecto de Software
+</a>                </td>
+                <td>Proveer estimados de volumen y requerimientos de desempeño.</td>
+              </tr>
+              <tr>
+                <td>
+<a href="/ssdp-roles/es/dba">                    <strong>CDA.</strong> DBA del Cliente
+</a>                </td>
+                <td>Proveer de estándares y restricciones, así como validar entregables.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!-- Artifacts Section -->
+<section id="artifacts">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h2>Artefactos</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="videos">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h2>Videos</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+  </div>
+</section>
+
+<!-- End Main Content -->
+
+<footer class='text-left'>
+  <div class='footer-above'>
+    <div class='container'>
+      <div class='row'>
+        <div class='footer-col col-md-4'>
+          <h4>Mapa del Sitio</h4>
+          <a href="/es/ssdp" target="_default"><span class=''>
+            Proceso: PDDS Tradicional
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCopspcs/appdev/sdpen" target="_default"><span class=''>
+            Proceso: PDDS Ágil
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Práctica: Ingenieria de Software
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Práctica: Administración de Proyectos
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Práctica: PSP/TSP
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Servicio: Entrenamientos
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Servicio: Planes de Carrera
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Servicio: Modelos de Estimación
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Servicio: Modelos de Compromiso
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Servicio: Oferta Tecnológica
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Servicio: PSG
+          </span>
+          </a>
+        </div>
+        <div class='footer-col col-md-4'>
+          <h4>Comunidades</h4>
+          <a href="/es"><span class=''>
+            AppDev Español
+          </span>
+          </a>
+          <br>
+          <a href="/en"><span class=''>
+            AppDev English
+          </span>
+          </a>
+          <br>
+          <a href="/pt"><span class=''>
+            AppDev Portugués
+          </span>
+          </a>
+          <br>
+          <br>
+          <h4>Otros Sitios</h4>
+          <a href="https://university.softtek.com/" target="_default"><span class=''>
+            Softtek University
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/security/ssecpro/SitePages/Home.aspx" target="_default"><span class=''>
+            SSecPro
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/pic/Pages/category.aspx" target="_default"><span class=''>
+            PIC
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCams/SitePages/Home.aspx" target="_default"><span class=''>
+            AMS
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCopspcs/testing/Pages/WelcomePageNew.aspx" target="_default"><span class=''>
+            QA & Testing
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/ERPServices/default.aspx" target="_default"><span class=''>
+            ERP Services
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/bi/default.aspx" target="_default"><span class=''>
+            BI & Data Integration
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/it/SitePages/ITIS%20Home%20Page.aspx" target="_default"><span class=''>
+            ITIS
+          </span>
+          </a>
+        </div>
+        <div class='footer-col col-md-4'>
+          <h4>Comunidades</h4>
+          <a href="https://www.yammer.com/softtek.com/" target="_default"><span class=''>
+            Yammer
+          </span>
+          </a>
+          <br>
+          <a href="https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&amp;feedId=10638572&amp;view=all" target="_default"><span class=''>
+            Cursos Online
+          </span>
+          </a>
+          <br>
+          <a href="https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&amp;feedId=6354923&amp;view=all" target="_default"><span class=''>
+            Comunidad de Analistas de Negocio
+          </span>
+          </a>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='footer-below'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12'>
+          Copyright &copy; Softtek
+          2017
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+		<script src="/javascripts/all.js"></script>
+  </body>
+</html>
+

@@ -14,8 +14,8 @@ process_picture: "/images/processes/en/process_doc.png"
 
 process:
   inputs:
-    - name: "APP. Application with system testing applied."   
-    - name: "FCS. Functional Component specifications."    
+    - name: "APP. Application with system testing applied."
+    - name: "FCS. Functional Component specifications."
     - name: "DIM. Deployment and installation Manual."
   outputs:
     - name: "TECD. Technical Documentation."
@@ -33,22 +33,22 @@ process:
     - acronym: "TD"
       name: "Technical Documenter"
       link: ""
-      description: "Leads the technical and user documentation activities, as well as produces the deliverables."    
+      description: "Leads the technical and user documentation activities, as well as produces the deliverables."
     - acronym: "BA"
       name: "Business Analyst"
       link: ""
-      description: "Provides inputs and validate deliverables (accuracy)."  
+      description: "Provides inputs and validate deliverables (accuracy)."
     - acronym: "SA"
       name: "Software Architect"
       link: ""
-      description: "Provides inputs."  
+      description: "Provides inputs."
     - acronym: "DBA"
       name: "Database Administrator"
       link: ""
-      description: "Provides inputs."  
-    - acronym: "STKH"
+      description: "Provides inputs."
+    - acronym: "STH"
       name: "Stakeholder"
       link: ""
-      description: "Validate deliverables."  
+      description: "Validate deliverables."
 ---
-It is the process of generating application documentation for the technical staff of the client (technical configuration and internal structure) and for the user community (end-user manuals). Usually, the process of technical and user documentation does not include training manuals (for example: presentations or training courses), online help or generation of troubleshooting guides). 
+It is the process of generating application documentation for the technical staff of the client (technical configuration and internal structure) and for the user community (end-user manuals). Usually, the process of technical and user documentation does not include training manuals (for example: presentations or training courses), online help or generation of troubleshooting guides).

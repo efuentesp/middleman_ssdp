@@ -24,7 +24,7 @@ process:
   outputs:
     - name: "PCR. Solicitud de Cambios al Proyecto autorizados (PCR)"
     - name: "MWP. Plan de trabajo inicial y/o actualizado del proyecto"
-    - name: "PCRL. Estadísticas de cambios (bitácora de cambios)"         
+    - name: "PCRL. Estadísticas de cambios (bitácora de cambios)"
   steps:
     - name: "Registrar solicitud de cambio"
     - name: "Analizar y recopilar evidencias del cambio."
@@ -39,19 +39,19 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
-      link: ""
-      description: "Es el responsable junto con su equipo de establecer la estrategia y la planeación del proyecto para cumplir los compromisos establecidos con el cliente."  
+      link: "/ssdp-roles/es/pl"
+      description: "Es el responsable junto con su equipo de establecer la estrategia y la planeación del proyecto para cumplir los compromisos establecidos con el cliente."
     - acronym: "BRM"
       name: "Business Relationship Manager"
-      link: ""
-      description: "Gerente de Relaciones de Negocio: Persona que se encarga de atender al cliente en relacióncon la venta de los servicios de Softtek."  
+      link: "/ssdp-roles/es/brm"
+      description: "Gerente de Relaciones de Negocio: Persona que se encarga de atender al cliente en relacióncon la venta de los servicios de Softtek."
     - acronym: "DM"
       name: "Delivery Manager"
-      link: ""
+      link: "/ssdp-roles/es/dm"
       description: "Gerente de Entrega: responsable de rendir cuentas hacia la dirección por los proyectos asignados."
     - acronym: "CCB"
       name: "​Administrador de cambios"
-      link: ""
+      link: "/ssdp-roles/es/ccb"
       description: "Responsable de generar los documentos  de control y bitácora de cambios, gestionando el análisis y diagnostico de las peticiones asegurándose de que los cambios pasen por el proceso de aprobación/rechazo de las instancias acordadas."
 ---
 Proceso que administra los cambios de alcance del proyecto en función a la última Línea Base (Baseline) definida y acordada con el cliente.

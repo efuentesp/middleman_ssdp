@@ -17,7 +17,7 @@
                   </tr>
                 </theader>
                 <tbody>
-                  <% blog('ssdp-role').articles.select {|a| a.data[:lang]==current_page.data.lang }.sort_by { |b| b.data.weight }.each do |role| %>
+                  <% blog('ssdp-role').articles.select {|a| a.data[:lang]==current_page.data.lang && a.data[:type]=='Project' }.sort_by { |b| b.data.weight }.each do |role| %>
                     <tr>
                       <td class="">
                         <strong>

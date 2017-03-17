@@ -22,7 +22,7 @@ process:
     - name: "CLO. Cierre técnico y administrativo del proyecto"
       artifacts:
         - name: "LES. Lecciones Aprendidas"
-        - name: "PPI. Oportunidades de mejora del proceso de desarrollo"                       
+        - name: "PPI. Oportunidades de mejora del proceso de desarrollo"
   steps:
     - name: "Generar  documentos de Aceptación y Entrega"
     - name: "Generar respaldo de información y productos a entregar en la fase o proyecto"
@@ -35,19 +35,19 @@ process:
   roles:
     - acronym: "PL"
       name: "Líder de Proyecto"
-      link: ""
-      description: "Es el responsable junto con su equipo de establecer la estrategia y la planeación del proyecto para cumplir los compromisos establecidos con el cliente."   
+      link: "/ssdp-roles/es/pl"
+      description: "Es el responsable junto con su equipo de establecer la estrategia y la planeación del proyecto para cumplir los compromisos establecidos con el cliente."
     - acronym: "DM"
       name: "Delivery Manager"
-      link: ""
+      link: "/ssdp-roles/es/dm"
       description: "Gerente de Entrega: responsable de rendir cuentas hacia la dirección por los proyectos asignados."
     - acronym: "CM"
       name: "Configuration Manager"
-      link: ""
-      description: "Responsable de efectuar el respaldo del proyecto y limpiar los ambientes utilizados."       
+      link: "/ssdp-roles/es/cm"
+      description: "Responsable de efectuar el respaldo del proyecto y limpiar los ambientes utilizados."
     - acronym: "ADM"
       name: "​Account Delivery Manager"
-      link: ""
+      link: "/ssdp-roles/es/adm"
       description: "Responsable de obtener Retroalimentaciones del cliente e identificar nuevas oportunidades de colaboración."
 ---
 Proceso que describe las acciones necesarias para la formalización y  cierre correcto del proyecto para que el aprendizaje generado sea capitalizable por futuros proyectos en términos de métricas de desempeño, lecciones aprendidas y sugerencia de mejoras identificadas.

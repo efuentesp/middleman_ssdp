@@ -3,13 +3,13 @@ date: 2017/01/01
 category:
 lang: es
 weight: 10
-title: Business Analyst
+title: Analista de Negocio
 
 acronym: BA
-name: Business Analyst
+name: Analista de Negocio
 picture: "/images/processes/roles/role.png"
-type: "INSIDE"
-description: "Un Business Analyst es el enlace entre Negocio y Tecnología para definir los Requerimientos de Software (descubrirlos, entenderlos, analizarlos, validarlos y comunicarlos). Realizar Especificaciones Funcionales que satisfagan los requerimientos y soporten el Desarrollo del Software así como el Proceso de Pruebas de Aceptación de Usuario."
+type: "Project"
+description: "Un Analista de Negocio es el enlace entre Negocio y Tecnología para definir los Requerimientos de Software (descubrirlos, entenderlos, analizarlos, validarlos y comunicarlos). Realizar Especificaciones Funcionales que satisfagan los requerimientos y soporten el Desarrollo del Software así como el Proceso de Pruebas de Aceptación de Usuario."
 
 activities:
   - "Entender las verdaderas necesidades a través del uso de un conjunto de técnicas"
