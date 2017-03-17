@@ -10,7 +10,7 @@
         <div class="row">
           <% current_page.data.portfolio.each do |service| %>
             <div class="col-sm-4 portfolio-item">
-              <% link_to service.link, :class => 'portfolio-link' do %>
+              <% link_to service.link, :class => 'portfolio-link', :target => '_default' do %>
                 <div class="caption">
                   <div class="caption-content">
                     <i class="fa fa-search-plus fa-3x"></i>

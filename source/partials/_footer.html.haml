@@ -1,0 +1,124 @@
+-# Footer
+%footer{ :class => 'text-left' }
+
+  %div{ :class => 'footer-above' }
+    %div{ :class => 'container' }
+      %div{ :class => 'row' }
+        %div{ :class => 'footer-col col-md-4' }
+          %h4= t(:site_map)
+          = link_to "/#{current_page.data.lang}/ssdp", :target => '_default' do
+            %span{ :class => '' }
+              = t(:process_ssdp)
+          %br
+          = link_to 'https://onesofttek.sharepoint.com/sites/SKCopspcs/appdev/sdpen', :target => '_default' do
+            %span{ :class => '' }
+              = t(:process_assdp)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:practice_software_engineering)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:practice_project_management)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:practice_psp_tsp)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:service_training)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:service_career_path)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:service_estimation_models)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:service_engagement_models)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:service_tech_offering)
+          %br
+          = link_to '#', :target => '_default' do
+            %span{ :class => '' }
+              = t(:service_psg)
+
+        %div{ :class => 'footer-col col-md-4' }
+          %h4= t(:communities)
+          = link_to '/es' do
+            %span{ :class => '' }
+              AppDev Español
+          %br
+          = link_to '/en' do
+            %span{ :class => '' }
+              AppDev English
+          %br
+          = link_to '/pt' do
+            %span{ :class => '' }
+              AppDev Portugués
+
+          %br
+          %br
+
+          %h4= t(:other_sites)
+          = link_to 'https://university.softtek.com/', :target => '_default' do
+            %span{ :class => '' }
+              Softtek University
+          %br
+          = link_to 'https://collaboration.softtek.com/security/ssecpro/SitePages/Home.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:secpro)
+          %br
+          = link_to 'https://collaboration.softtek.com/pic/Pages/category.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:pic)
+          %br
+          = link_to 'https://onesofttek.sharepoint.com/sites/SKCams/SitePages/Home.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:ams)
+          %br
+          = link_to 'https://onesofttek.sharepoint.com/sites/SKCopspcs/testing/Pages/WelcomePageNew.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:qa_testing)
+          %br
+          = link_to 'https://collaboration.softtek.com/practices/ERPServices/default.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:erp)
+          %br
+          = link_to 'https://collaboration.softtek.com/practices/bi/default.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:bi)
+          %br
+          = link_to 'https://collaboration.softtek.com/practices/it/SitePages/ITIS%20Home%20Page.aspx', :target => '_default' do
+            %span{ :class => '' }
+              = t(:itis)
+
+        %div{ :class => 'footer-col col-md-4' }
+          %h4= t(:communities)
+          = link_to 'https://www.yammer.com/softtek.com/', :target => '_default' do
+            %span{ :class => '' }
+              Yammer
+          %br
+          = link_to 'https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&feedId=10638572&view=all', :target => '_default' do
+            %span{ :class => '' }
+              =t(:online_courses)
+          %br
+          = link_to 'https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&feedId=6354923&view=all', :target => '_default' do
+            %span{ :class => '' }
+              =t(:ba_community)
+          %br
+
+
+  %div{ :class => 'footer-below' }
+    %div{ :class => 'container' }
+      %div{ :class => 'row' }
+        %div{ :class => 'col-lg-12' }
+          Copyright &copy; Softtek
+          = Time.now.year

@@ -1,10 +1,27 @@
 pt:
   ssdp: PDSS v3
   psg: Grupo de Especialistas de Práctica
+  site_map: Mapa del Sitio
+  other_sites: Otros Sitios
+  other_languages: Otros Idiomas
+  communities: Comunidades
   development_process: Processo de Desenvolvimento
   practices: Práticas
   service_offering: Oferta de Serviços
   phases: Fases do Desenvolvimento
+
+  process_ssdp: "Proceso: PDDS Tradicional"
+  process_assdp: "Proceso: PDDS Ágil"
+  practice_software_engineering: "Práctica: Ingenieria de Software"
+  practice_project_management: "Práctica: Administración de Proyectos"
+  practice_psp_tsp: "Práctica: PSP/TSP"
+  service_training: "Servicio: Entrenamientos"
+  service_career_path: "Servicio: Planes de Carrera"
+  service_estimation_models: "Servicio: Modelos de Estimación"
+  service_engagement_models: "Servicio: Modelos de Compromiso"
+  service_tech_offering: "Servicio: Oferta Tecnológica"
+  service_psg: "Servicio: PSG"
+
   name: Nome
   description: Descrição
   diagram: Diagrama
@@ -56,3 +73,14 @@ pt:
   career_plan: Plan de Carrera
   estimation_models: Modelos de Estimación
   email: eMail
+
+  secpro: SSecPro
+  pic: PIC
+  ams: AMS
+  qa_testing: QA & Testing
+  erp: ERP Services
+  bi: BI & Data Integration
+  itis: ITIS
+
+  online_courses: Cursos Online
+  ba_community: Comunidad de Analistas de Negocio

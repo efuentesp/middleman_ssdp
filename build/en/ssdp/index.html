@@ -1,11 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-  <head runat="server">
-    <meta name="WebPartPageExpansion" content="full" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Traditional SSDP v3</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <SharePoint:CssRegistration Name="default" runat="server"/>
+    <meta name="description" content="The Softtek's Software Development Process consists of 6 sequential phases distributed along time, each of them has a main milestone; each phase is essentially a time lapse that occurs between 2 main milestones. Each phase has an assessment in order to determine whether its objectives were met. A satisfactory assessment of each phase allows moving towards the next one. Each phase is made of a group of activities and products assigned to a group of specific roles. ">
 
     <link href="/stylesheets/site.css" rel="stylesheet" />
 
@@ -20,6 +23,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
 
   <body id="page-top" class="index">
@@ -156,10 +160,138 @@
                     <tr>
                       <td class="">
                         <strong>
-<a href="/ssdp-processes/en/02-req/">                            REQ. Requirement Development
+<a href="/ssdp-processes/en/01-eng/">                            ENG. Engagement
 </a>                        </strong>
                       </td>
-                      <td class="text-justify">En este proceso se crea una line base de los artefactos que darán soporte el entendimiento de los objetivos y procesos de negocio del cliente, adquiriendo el conocimiento de negocio y desarrollando las Especificaciones de los Requerimientos Funcionales y No-Funcionales para la Aplicación (nueva o a modificar). Esto con apego y consistencia con el alcance original del proyecto definido en la Solicitud de Trabajo (SOW).</td>
+                      <td class="text-justify">This process is part of the Sales cycle. It takes care of transforming the client’s requirements into a solution proposal according to the information provided and that is feasible for its operation regarding the commitment model selected of the Applications Development and the elements of each one established.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/02-req/">                            REQ. Requirements Development
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of understanding client’s processes and goals, acquiring business/domain knowledge and developing the Functional and Non-functional Requirements Specification for the new/modified application, keeping consistency with the project scope baseline defined in the statement of work. Includes the following activities: requirements elicitation, analysis, specification and validation.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/03-arc/">                            ARC. Architecture Design and Implementation
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of making technical decisions about the software architecture of the application to be implemented and the platform on which it will be executed, and of implementing the application framework and support subsystems that will satisfy the functional and non-functional requirements.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/04-sfd/">                            SFD. Solution Functional Design
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of defining/designing a specific solution to the functional requirements allocated to the project in the Functional and Non-functional Requirements Specification baseline. The solution functional design consists of a set of “functional components” integrated into a software system (application) and the underlying data sources (databases or file systems) accessed by the functional components. The “functional component specification” describes the external behaviour (interactions with users and/or external systems) and internal activities (internal data access and/or manipulation activities), deferring component’s internal structure decisions to the CTR process. Each functional component belongs to a “functional component type” and must be compliant with the functional pattern defined for the “functional component type” in the ARC process.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/05-dbi/">                            DBI. Database Design and Implementation
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of transforming the domain data structure model into a physical database model able to satisfy data access requests from functional components, to store expected data volumes, to satisfy performance and concurrency requirements, and to preserve stored data integrity and privacy.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/06-cis/">                            CIS. Components Implementation Specification
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of integrating technical and implementation context considerations into the functional component specification. Technical considerations may include: Non-standard behavior for user interface elements, security/authorization, failure-mode and effects, transaction demarcation/distribution, etc. Mapping to physical/implementation components (physical database model, physical environment elements, etc) Detailed contracts for inter-system integration (i.e. rejection of interfaces, failure detection and recovery/alert protocols, etc.)</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/07-gui/">                            GUI. Graphic User Interface Design
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of transforming low-fidelity prototypes (interface layouts) into high-fidelity prototypes (actual HTML pages or Forms), in compliance with user interface standards and functional patterns authorized for use in the application. High-fidelity prototype does not implement application functionality, and usually provides navigation capabilities between GUI elements (menu, pages/forms).</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/08-ctr/">                            CTR. Component Construction
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of designing the internal structure (identifying and designing technical components), coding and thoroughly testing a functional component.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/09-int/">                            INT. System Integration
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of integrating functional components into a working system (system build), and testing the direct interactions (calls, invocations and message exchange) between the functional components. If interfaces with external systems exist, external interactions are tested. If development platform is different from production platform, portability and compatibility with the production platform is tested. If application functionality is exposed using web-browsers or web-services, penetration test should be executed. Component integration process includes the activities for detecting and fixing component integration/interaction defects.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/10-std/">                            STD. System Test Design
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of defining a test strategy and developing system testware to verify: Correct “wing-to-wing” business process execution for expected operation scenarios (complete business cycles) Acceptable performance while stressed to the expected upper limit conditions (concurrency, </td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/11-ste/">                            STE. System Test Execution
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process testing the integrated application to validate the accurate execution of “end-to-end” business process cycles, and the satisfaction of the performance requirements in the production environment (or similar) under stress conditions. System Test Execution process includes the activities for detecting and fixing found defects.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/12-doc/">                            DOC. Technical and User Documentation
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of developing application documentation for client’s technical staff (deployment/installation, configuration and technical internal structure) and for user community staff (end-user manuals). Usually, Technical and User Documentation process does not include training materials (i.e. presentations, web-based or computer based training courses), on-line help or trouble-shooting guides development.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/13-uat/">                            UAT. User Acceptance Test Support
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The process of assisting/helping project stakeholders on one or several of the following activities: Application acceptance test scenarios identification, Acceptance test environment and data preparation, Expected test results calculation, Application execution and results validation Release-readiness assessment. Stakeholders (technical and user communities) are responsible for the execution of previous tasks, and support will be provided only on an explicit request basis. Softtek’s responsibility for this process includes fixing defects reported by stakeholders, after mutual agreement on incident’s classification (defect, change request, or invalid report).</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/14-scm/">                            SCM. Software Configuration Management
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">The purpose of the Configuration Management is to establish and maintain the work products integrity by using the configuration identification, configuration control, configuration status report and configuration audits.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/16-pto/">                            PTO. Project Tracking and Oversight
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Process that allows including the appropriate control mechanisms for knowing the project status and progress with performance metrics as well as decisions making based on data and establish corrective actions onto deviations in order to ensure the successful conclusion in time and budget.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/17-pcr/">                            PCR. Project Change Request
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Process that manages the project scope changes according to the last baseline defined and agreed with the client. Assesses the identified changes and negotiation impact of them with the client, the authorized changes are incorporated to the work plan and a new baseline for the project is established.</td>
+                    </tr>
+                    <tr>
+                      <td class="">
+                        <strong>
+<a href="/ssdp-processes/en/18-fpt/">                            FPT. Formalize Project Termination
+</a>                        </strong>
+                      </td>
+                      <td class="text-justify">Process that describes the required actions for the project‘s appropriate formalization and closure so the generated learning be capitalized for future projects in term of performance metrics, lessons learned and suggestions of identified improvements.</td>
                     </tr>
                 </tbody>
               </table>
@@ -246,49 +378,157 @@
 
 <!-- End Main Content -->
 
-<!-- Footer -->
-<footer class="text-center">
-    <!-- <div class="footer-above">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-4">
-
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>Redes Sociales</h3>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col col-md-4">
-
-                </div>
-            </div>
+<footer class='text-left'>
+  <div class='footer-above'>
+    <div class='container'>
+      <div class='row'>
+        <div class='footer-col col-md-4'>
+          <h4>Site Map</h4>
+          <a href="/en/ssdp" target="_default"><span class=''>
+            Process: Traditional SSDP
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCopspcs/appdev/sdpen" target="_default"><span class=''>
+            Process: Agile SSDP
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Practice: Software Engineering
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Practice: Project Management
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Practice: PSP/TSP
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Training
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Career Path
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Estimation Models
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Engagement Models
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Tech Offering
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: PSG
+          </span>
+          </a>
         </div>
-    </div> -->
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; Softtek 2017
-                </div>
-            </div>
+        <div class='footer-col col-md-4'>
+          <h4>Communities</h4>
+          <a href="/es"><span class=''>
+            AppDev Español
+          </span>
+          </a>
+          <br>
+          <a href="/en"><span class=''>
+            AppDev English
+          </span>
+          </a>
+          <br>
+          <a href="/pt"><span class=''>
+            AppDev Portugués
+          </span>
+          </a>
+          <br>
+          <br>
+          <h4>Other Sites</h4>
+          <a href="https://university.softtek.com/" target="_default"><span class=''>
+            Softtek University
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/security/ssecpro/SitePages/Home.aspx" target="_default"><span class=''>
+            SSecPro
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/pic/Pages/category.aspx" target="_default"><span class=''>
+            PIC
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCams/SitePages/Home.aspx" target="_default"><span class=''>
+            AMS
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCopspcs/testing/Pages/WelcomePageNew.aspx" target="_default"><span class=''>
+            QA & Testing
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/ERPServices/default.aspx" target="_default"><span class=''>
+            ERP Services
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/bi/default.aspx" target="_default"><span class=''>
+            BI & Data Integration
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/it/SitePages/ITIS%20Home%20Page.aspx" target="_default"><span class=''>
+            ITIS
+          </span>
+          </a>
         </div>
+        <div class='footer-col col-md-4'>
+          <h4>Communities</h4>
+          <a href="https://www.yammer.com/softtek.com/" target="_default"><span class=''>
+            Yammer
+          </span>
+          </a>
+          <br>
+          <a href="https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&amp;feedId=10638572&amp;view=all" target="_default"><span class=''>
+            Online Courses
+          </span>
+          </a>
+          <br>
+          <a href="https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&amp;feedId=6354923&amp;view=all" target="_default"><span class=''>
+            Business Analyst Community
+          </span>
+          </a>
+          <br>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class='footer-below'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12'>
+          Copyright &copy; Softtek
+          2017
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 

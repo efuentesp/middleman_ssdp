@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CIS</title>
+    <meta name="description" content="">
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="page-top" class="index">
+
+
+<div id="skipnav"><a href="#maincontent">Inicio</a></div>
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">CIS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#overview">Description</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#process_diagram">Diagram</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#process">Process</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#roles">Roles</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#artifacts">Artifacts</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="#videos">Videos</a>
+                </li>
+                <li class="page-scroll">
+                  <a href="/en/ssdp#processes">SSDP v3</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<!-- Main Content -->
+
+<!-- Overview Section -->
+<section id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Components Implementation Specification</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1">
+        <img src="/images/processes/process/process.64x64.png" class="img-responsive" alt="Components Implementation Specification" />
+      </div>
+      <div class="col-lg-11">
+        <span class="text-justify"><p>This process consists in integrating the technical considerations to the functional component specification. The technical considerations include:</p>
+
+<p>•Adherence to the functional patterns
+•Refactoring or modularization of functionality
+•Non-standard behavior for user interface elements, security/authorization, failure-mode, transaction demarcation/distribution, etc.
+•Mapping to physical/implementation components (physical data model, physical environment elements, etc)
+•Detailed contracts for inter-system integration (i.e. rejection of interfaces, failure detection and recovery/alert protocols, etc.)</p>
+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Diagram Section -->
+<section id="process_diagram">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Process Diagram</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="/images/processes/en/process_cis.png" class="img-responsive" alt="Components Implementation Specification" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Desciption Section -->
+<section id="process">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <br/>
+          <h2>Process Description</h2>
+          <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col-md-4">Inputs</th>
+              <th class="col-md-4">Steps</th>
+              <th class="col-md-4">Outputs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                    <li>ABS. Application Breakdown Structure (list of functional components grouped in modules)</li>
+                    <li>FCD. Functional Components Dependencies model</li>
+                    <li>PDM. Physical data model</li>
+                    <li>FCS. Functional Component Specifications</li>
+                    <li>EIS. External Interface Specification</li>
+                    <li>LOFI. GUI Low-Fidelity Prototype</li>
+                    <li>DIC. Data Dictionary</li>
+                </ul>
+              </td>
+              <td>
+                <ol>
+                    <li>Plan Implementation Specification Tasks </li>
+                    <li>Specify non-standard behavior and/or internal activities (failure modes and effects, user interface, transaction boundaries, security, etc)</li>
+                    <li>Design physical database and environment access (relational-object mapping, queries, integration platform access, etc.)</li>
+                    <li>Design physical communication/interaction protocols with external systems (message mapping, error codes, exception handling, etc.)</li>
+                    <li>Inspect implementation specification of the functional component.</li>
+                    <li>Establish component detailed specification baseline.</li>
+                    <li>Post-mortem CIS.</li>
+                </ol>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    FCSI. Implementation specification of the functional component(addendum to Functional Component Specification)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role Desciption Section -->
+  <section id="roles">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <br/>
+            <h2>Roles</h2>
+            <hr class="star-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+<a href="">                    <strong>SD.</strong> Software Designer
+</a>                </td>
+                <td>Leads activities of detailed specification of components and produces deliverables.</td>
+              </tr>
+              <tr>
+                <td>
+<a href="">                    <strong>BA.</strong> Business Analyst
+</a>                </td>
+                <td>Provides inputs and validation(Accuracy).</td>
+              </tr>
+              <tr>
+                <td>
+<a href="">                    <strong>DBA.</strong> Database Administrator
+</a>                </td>
+                <td>Provides Outputs.</td>
+              </tr>
+              <tr>
+                <td>
+<a href="">                    <strong>SA.</strong> Software Architect
+</a>                </td>
+                <td>Validates Deliverables.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!-- Artifacts Section -->
+<section id="artifacts">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h2>Artifacts</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="videos">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h2>Videos</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+
+    </div>
+  </div>
+</section>
+
+<!-- End Main Content -->
+
+<footer class='text-left'>
+  <div class='footer-above'>
+    <div class='container'>
+      <div class='row'>
+        <div class='footer-col col-md-4'>
+          <h4>Site Map</h4>
+          <a href="/en/ssdp" target="_default"><span class=''>
+            Process: Traditional SSDP
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCopspcs/appdev/sdpen" target="_default"><span class=''>
+            Process: Agile SSDP
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Practice: Software Engineering
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Practice: Project Management
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Practice: PSP/TSP
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Training
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Career Path
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Estimation Models
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Engagement Models
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: Tech Offering
+          </span>
+          </a>
+          <br>
+          <a href="#" target="_default"><span class=''>
+            Service: PSG
+          </span>
+          </a>
+        </div>
+        <div class='footer-col col-md-4'>
+          <h4>Communities</h4>
+          <a href="/es"><span class=''>
+            AppDev Español
+          </span>
+          </a>
+          <br>
+          <a href="/en"><span class=''>
+            AppDev English
+          </span>
+          </a>
+          <br>
+          <a href="/pt"><span class=''>
+            AppDev Portugués
+          </span>
+          </a>
+          <br>
+          <br>
+          <h4>Other Sites</h4>
+          <a href="https://university.softtek.com/" target="_default"><span class=''>
+            Softtek University
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/security/ssecpro/SitePages/Home.aspx" target="_default"><span class=''>
+            SSecPro
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/pic/Pages/category.aspx" target="_default"><span class=''>
+            PIC
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCams/SitePages/Home.aspx" target="_default"><span class=''>
+            AMS
+          </span>
+          </a>
+          <br>
+          <a href="https://onesofttek.sharepoint.com/sites/SKCopspcs/testing/Pages/WelcomePageNew.aspx" target="_default"><span class=''>
+            QA & Testing
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/ERPServices/default.aspx" target="_default"><span class=''>
+            ERP Services
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/bi/default.aspx" target="_default"><span class=''>
+            BI & Data Integration
+          </span>
+          </a>
+          <br>
+          <a href="https://collaboration.softtek.com/practices/it/SitePages/ITIS%20Home%20Page.aspx" target="_default"><span class=''>
+            ITIS
+          </span>
+          </a>
+        </div>
+        <div class='footer-col col-md-4'>
+          <h4>Communities</h4>
+          <a href="https://www.yammer.com/softtek.com/" target="_default"><span class=''>
+            Yammer
+          </span>
+          </a>
+          <br>
+          <a href="https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&amp;feedId=10638572&amp;view=all" target="_default"><span class=''>
+            Online Courses
+          </span>
+          </a>
+          <br>
+          <a href="https://www.yammer.com/softtek.com/#/threads/inGroup?type=in_group&amp;feedId=6354923&amp;view=all" target="_default"><span class=''>
+            Business Analyst Community
+          </span>
+          </a>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='footer-below'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12'>
+          Copyright &copy; Softtek
+          2017
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+		<script src="/javascripts/all.js"></script>
+  </body>
+</html>
+

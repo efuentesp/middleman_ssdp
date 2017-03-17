@@ -1,10 +1,27 @@
 en:
   ssdp: SSDP v3
   psg: Practice Specialist Group
+  site_map: Site Map
+  other_sites: Other Sites
+  other_languages: Other Languages
+  communities: Communities
   development_process: Development Process
   practices: Practices
   service_offering: Service Offering
   phases: Development Phases
+
+  process_ssdp: "Process: Traditional SSDP"
+  process_assdp: "Process: Agile SSDP"
+  practice_software_engineering: "Practice: Software Engineering"
+  practice_project_management: "Practice: Project Management"
+  practice_psp_tsp: "Practice: PSP/TSP"
+  service_training: "Service: Training"
+  service_career_path: "Service: Career Path"
+  service_estimation_models: "Service: Estimation Models"
+  service_engagement_models: "Service: Engagement Models"
+  service_tech_offering: "Service: Tech Offering"
+  service_psg: "Service: PSG"
+
   name: Name
   description: Description
   diagram: Diagram
@@ -57,3 +74,14 @@ en:
   career_plan: Career Plan
   estimation_models: Estimation Models
   email: eMail
+
+  secpro: SSecPro
+  pic: PIC
+  ams: AMS
+  qa_testing: QA & Testing
+  erp: ERP Services
+  bi: BI & Data Integration
+  itis: ITIS
+
+  online_courses: Online Courses
+  ba_community: Business Analyst Community
